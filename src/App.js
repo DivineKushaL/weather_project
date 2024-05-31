@@ -1,6 +1,7 @@
 import { useState } from "react";
 import WeatherWidget from "./componenets/weather";
 import './App.css'
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [inputValue,setinputValue]= useState('London');
@@ -14,6 +15,11 @@ function App() {
 
   return (
     <div className="form-container">
+      <div>
+        <Toaster 
+        position="top-right"
+        ></Toaster>
+      </div>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
         type="text"

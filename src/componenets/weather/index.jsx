@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './index.css'
 import axios from 'axios'
+import toast from 'react-hot-toast'
 import { ReactComponent as MoonSvg } from '../../assets/svgs/dark_mode2.svg'
 import { ReactComponent as CloudSvg } from '../../assets/svgs/cloud2.svg'
 import { ReactComponent as SunSvg } from '../../assets/svgs/sun2.svg'
@@ -16,6 +17,7 @@ const WeatherWidget = ({location}) => {
                 console.log(response.data);
             }).catch(error=>{
                 console.error("error: ",error);
+                toast.error('Invalid Place');
             })
         }
     },[location]);
