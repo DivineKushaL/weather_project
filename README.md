@@ -8,6 +8,10 @@ WeatherSphere is a web application which displays the weather data of desired lo
 - CSS
 - HTML
 
+## Preview 
+
+![weather-app](src/assets/svgs/weathersphere.png)
+
 ## Project Setup
 
 1. Clone the repository:
